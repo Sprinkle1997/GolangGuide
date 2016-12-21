@@ -49,8 +49,6 @@ func forMain() {
 
 //这里需要注意
 //传入的数据长度为0
-//这里需要注意
-//传入的数据长度为0
 func setIntArray(arr []int) []int {
 	_arr := make([]int, 10)
 	arr = _arr
@@ -68,4 +66,16 @@ func setStringArray(arrs []string) []string {
 		arrs[i] = "Hello the " + strconv.Itoa(i) + " xiaowen"
 	}
 	return arrs
+}
+
+func arrayFirst(arr []bool) []bool {
+	_arr := make([]bool, 5)
+	for i := 0; i < 5; i++ {
+		if i/2 == 1 {
+			_arr[i] = true
+		} else {
+			_arr[i] = false
+		}
+	}
+	return _arr
 }
