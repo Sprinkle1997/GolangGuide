@@ -16,14 +16,14 @@ type CalculateArea interface {
 }
 
 //inheritance
-func (P T) Area() float32 {
-	p.r * p.r
+func (s *Square) Area() float32 {
+	return s.r * s.r
 }
 
-func (P T) Area() float32 {
-	p.r * 3.14 //float32 3.14->3 3.51->4
+func (c *Circle) Area() float32 {
+	return c.r * 3.14 //float32 3.14->3 3.51->4
 }
 
-func GetArea() {
+func getArea() {
 	a := make([]GeneralContract, 2)
 }
